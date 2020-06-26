@@ -9,7 +9,6 @@ const SearchScreen = () => {
     const [search, results, error] = useBusinesses();
 
     const filterResults = (price) => {
-        console.log('results:', results)
         return results.filter((result) => {
             return result.price === price;
         });

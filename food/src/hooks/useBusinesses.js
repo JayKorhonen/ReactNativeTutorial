@@ -7,7 +7,7 @@ export default () => {
 
     const search = async (searchTerm) => {
         try {
-            const response = await yelp.get('/search', {
+            const response = await yelp.get('search', {
                 params: {
                     term: searchTerm,
                     location: 'Chicago',
